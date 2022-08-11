@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="534" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="535"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="535"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpB-Y6-S7N">
+                        <rect key="frame" x="10" y="469" width="421" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ef-p9-BUy">
+                        <rect key="frame" x="65" y="22" width="385" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BVI-oc-s92">
+                        <rect key="frame" x="0.0" y="62" width="450" height="400"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="400" id="dI0-qY-xmh"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jMe-nc-Icw">
+                        <rect key="frame" x="5" y="7" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="8Pd-mf-lKF"/>
+                            <constraint firstAttribute="height" constant="50" id="hhr-LT-5z3"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BVI-oc-s92" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1XZ-GO-Wxp"/>
+                    <constraint firstItem="GpB-Y6-S7N" firstAttribute="top" secondItem="BVI-oc-s92" secondAttribute="bottom" constant="7" id="Fw0-5s-pq8"/>
+                    <constraint firstItem="1Ef-p9-BUy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="IST-qz-7OB"/>
+                    <constraint firstAttribute="trailing" secondItem="BVI-oc-s92" secondAttribute="trailing" id="Lnp-lo-oea"/>
+                    <constraint firstAttribute="trailing" secondItem="GpB-Y6-S7N" secondAttribute="trailing" constant="19" id="UDq-mp-fIO"/>
+                    <constraint firstItem="1Ef-p9-BUy" firstAttribute="leading" secondItem="jMe-nc-Icw" secondAttribute="trailing" constant="10" id="Upq-rD-yw5"/>
+                    <constraint firstItem="GpB-Y6-S7N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bNz-r9-Iek"/>
+                    <constraint firstItem="BVI-oc-s92" firstAttribute="top" secondItem="1Ef-p9-BUy" secondAttribute="bottom" constant="20.5" id="cjW-Vi-IXw"/>
+                    <constraint firstAttribute="bottom" secondItem="GpB-Y6-S7N" secondAttribute="bottom" constant="44" id="hGa-yp-l3x"/>
+                    <constraint firstItem="jMe-nc-Icw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="kFE-K0-L39"/>
+                    <constraint firstAttribute="trailing" secondItem="1Ef-p9-BUy" secondAttribute="trailing" id="lhy-xl-QaQ"/>
+                    <constraint firstItem="BVI-oc-s92" firstAttribute="top" secondItem="jMe-nc-Icw" secondAttribute="bottom" constant="5" id="oE1-IP-8b6"/>
+                    <constraint firstItem="jMe-nc-Icw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="yzE-47-s9K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="captionLabel" destination="GpB-Y6-S7N" id="nHY-gR-2pL"/>
+                <outlet property="nameLabel" destination="1Ef-p9-BUy" id="1Bq-OQ-kmA"/>
+                <outlet property="postImage" destination="BVI-oc-s92" id="aoJ-oA-Xae"/>
+                <outlet property="profilPhoto" destination="jMe-nc-Icw" id="yU1-0O-zQN"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="53.90625"/>
+        </tableViewCell>
+    </objects>
+</document>
